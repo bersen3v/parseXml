@@ -33,18 +33,21 @@ def show(users):
       for key in user.keys():
         print(f"{key}: {user[key]}")
 
+def main():
+  global xml
+  xml = xml.splitlines()[1:]
+  lastXml = xml
+  while len(xml)>0:
+    if(clear(xml[0]) == clear(xml[-1])):
+        lastXml = xml
+        xml = xml[1:-1]
+    else:
+      data = getXmlObjects("\n".join(lastXml))
+      users = parseXmlFloor(data)
+      show(users)
+      xml = []
 
-xml = xml.splitlines()[1:]
-lastXml = xml
-while len(xml)>0:
-  if(clear(xml[0]) == clear(xml[-1])):
-      lastXml = xml
-      xml = xml[1:-1]
-  else:
-    data = getXmlObjects("\n".join(lastXml))
-    users = parseXmlFloor(data)
-    show(users)
-    xml = []
+main()
     
 
     
