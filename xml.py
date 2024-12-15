@@ -1,22 +1,69 @@
+# <root>
+#   <user>
+#     <info>
+#       <metadata>
+#         <id>1<id>
+#         <regdate>18.11.2023<regdate>
+#       <metadata>
+#       <firstname>Иван</firstname>
+#       <lastname>Берсенев</lastname>
+#     </info>
+#     <role>студент</role>
+#   </user>
+#   <user>
+#     <info>
+#       <firstname>Иван</firstname>
+#       <lastname>Берсенев</lastname>
+#     </info>
+#     <role>студент</role>
+#   </user>
+#   <user>
+#     <info>
+#       <firstname>Иван</firstname>
+#       <lastname>Берсенев</lastname>
+#     </info>
+#     <role>студент</role>
+#   </user>
+# </root>
+
+
 xml = """
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="ЗапросСреднийБалл.xsd" generated="2024-11-30T18:57:31">
-<Запрос_x0020_средний_x0020_балл>
-<Фамилия>вай</Фамилия>
-<Имя>цпцй</Имя>
-<Отчество>пуцп</Отчество>
-<Выражение1>3</Выражение1>
-</Запрос_x0020_средний_x0020_балл>
-<Запрос_x0020_средний_x0020_балл>
-<Фамилия>Петрова</Фамилия>
-<Имя>Мария</Имя>
-<Отчество>Николаевна</Отчество>
-<Выражение1>4</Выражение1>
-</Запрос_x0020_средний_x0020_балл>
-<Запрос_x0020_средний_x0020_балл>
-<Фамилия>Сидоров</Фамилия>
-<Имя>Дмитрий</Имя>
-<Отчество>Владимирович</Отчество>
-<Выражение1>3.5</Выражение1>
-</Запрос_x0020_средний_x0020_балл>
-</dataroot>
+<root>
+<user1>
+<info>
+<metadata>
+<id>
+1
+</id>
+<regdate>
+18.11.2023
+</regdate>
+</metadata>
+<firstname>
+<realname>
+Иван
+</realname>
+</firstname>
+<lastname>
+Берсенев
+</lastname>
+</info>
+<role>
+студент
+</role>
+</user1>
+<user2>
+<info>
+<firstname>
+Иван
+</firstname>
+<lastname>
+Берсенев
+</lastname>
+</info>
+<role>
+студент
+</role>
+</user2>
+</root>
 """
